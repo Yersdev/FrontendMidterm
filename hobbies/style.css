@@ -54,7 +54,8 @@ body{
 .hobby-page__header{
     display: flex;
     justify-content: space-between;
-    align-items: baseline;}
+    align-items: baseline;
+}
 .header__icon{
     margin: 28px 0 0 80px;
     width: 212px;
@@ -156,11 +157,70 @@ body{
     transition: background-color 0.3s ease;
     border: white solid 2px;
 }
+.about-us{
 
+}
+.about-us__slogan{
 
+    width: 144px;
+    margin: 0 auto;
+    height: 62px;
+    font-family: DM Sans;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 62.5px;
+    text-align: center;
+    margin-bottom: 38px;
+}
 
+.about-us__text{
+    width: 780px;
+    height: 136px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23.44px;
+    margin-bottom: 38px;
+}
+.about-us__descs{
+    padding-bottom: 120px;
+    display: flex;
+    text-align: center;
+    gap: 30px;
+}
+.about-us__name{
+    padding-bottom: 3px;
+    display: block;
+    align-items: center;
+    margin: 0 auto;
 
+}
+.about-us__email{
+    
+    display: block;
+    padding-bottom: 3px;
+    text-align: center;
+    margin: 0 auto;
+}
+.about-us__telegramm{
+    display: block;
+    text-align: center;
+    padding-bottom: 3px;
+    margin: 0 auto;
+}
+.about-us__phone{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 3px;
 
+}
+
+.about-us__music-pic{
+    padding-bottom: 18px;}
+    
 
 
 
