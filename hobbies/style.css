@@ -80,6 +80,7 @@ body{
     opacity: 0px;
     display: flex;
 }
+
 .nav__link{
     width: auto;
     height: 23px;
@@ -301,6 +302,7 @@ body{
 }
 
 .about-us__music-pic{
+    margin-top: 25px;
     padding-bottom: 18px;}
 
 .hobbies{
@@ -317,7 +319,7 @@ body{
     margin: 0 auto;
     margin-bottom: 102px;
 }
-.hobies__boxes{
+.hobbies__boxes{
     display: flex;
     width: 1168px;
     height: 235px;
@@ -345,7 +347,7 @@ body{
     border-radius: 15px;
 }
 .hobbies__img{
-    margin:34px 242px 30px 56px;
+    margin:34px 0 30px 56px;
     width: 51px;
     height: 46.47px;
 }
@@ -614,6 +616,8 @@ body{
 
 
 @media only screen and (max-width: 1200px) {
+    .nav{
+        padding-right: 0;}
     .welcome__pic-author{
         display: none;
     }
@@ -643,8 +647,8 @@ body{
         width: 210px;
         height: 94px;
     }
-    .hobies__boxes{
-        width: 868px;
+    .hobbies__boxes{
+        width: 840px;
     }
     .skills__boxes{
         width: 868px;
@@ -655,4 +659,143 @@ body{
     .city__article-block{
         width: 900px;
     }
+
+    @media only screen and (max-width: 900px) {
+        .city__article-block{
+            flex-direction: column;
+
+        }
+        .city__article-block{
+            width: 600px;
+        }
+        .city__text{
+            width: auto;
+        }
+        .city__img{
+        }
+        .city__text-title{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .city__title{
+            margin-bottom: 30px;
+        }
+        .skills__boxes{
+            width: auto;
+        }
+        .skills__perc-sport{
+            width: auto;
+            font-size: 60px;
+        }
+        .skills__perc-comm{
+            width: auto;
+            font-size: 60px;
+        }
+        .skills__perc-study{
+            width: auto;
+            font-size: 60px;
+        }
+        .skills__perc-music{
+            width: auto;
+            font-size: 60px;
+        }
+        .skills__text-comm, .skills__text-study, .skills__text-music, .skills__text-sport{
+            font-size: 19px;
+        }
+        .hobbies__boxes{
+            width: 660px;
+            margin: 0 auto;
+        }
+        .hobbies__travel, .hobbies__dev, .hobbies__sport{
+            width: 180px;
+        }
+        .hobbies__text-dev, .hobbies__text-sport, .hobbies__text-forest{
+            width: 120px;
+            font-size: 28px;
+        }
+        .hobbies__text-dev{
+            visibility: hidden;
+            transform: translateY(-93px);
+
+        }
+        .hobbies__text-dev::after {
+            content: "Backend Dev";
+            visibility: visible; /* Отображаем текст псевдоэлемента */
+    /* Стилизуем псевдоэлемент, чтобы он соответствовал исходному элементу */
+    padding: inherit;    /* Наследуем padding */
+    margin: inherit;     /* Наследуем margin */
+    font-size: inherit;  /* Наследуем размер шрифта */
+    
+    color: inherit;      /* Наследуем цвет текста */
+    font-family: inherit; /* Наследуем шрифт */
+    line-height: inherit;
+        }}
+    @media only screen and (max-width: 800px) {
+    .about-us__text{
+        width: 680px;
+        height: auto;
+    }
+    .about-us__descs{
+        gap: 10px;
+        padding-bottom: 80px;
+    }
+    .about-us__name, .about-us__email, .about-us__telegramm, .about-us__phone{
+        width: auto;
+    }
+    .about-us__real-name, .about-us__real-email, .about-us__real-telegramm, .about-us__real-phone{
+        width: auto;
+        font-size: 10px;
+    }
+    .header__icon{
+        display: none;}
+    }
+    .nav{
+        margin: 40px auto;
+    }
+    @media only screen and (max-width: 700px) {
+        .about-us__text{
+            width: auto;
+            font-size: 12px;
+        }
+
+        .hobbies__text-dev, .hobbies__text-sport, .hobbies__text-forest{
+            width: 120px;
+            font-size: 20px;
+            text-align: center;
+        }
+        .hobbies__travel, .hobbies__dev, .hobbies__sport{
+            width: 130px;
+        }
+        .hobbies__img{
+            margin:30px 0 30px 36px;
+            width: auto;
+            height: 46.47px;
+        }
+        .hobbies__boxes{
+            width: 450px;
+        }
+        .full-stars label svg {
+            width: 50px;
+        }
+    }
+    @media only screen and (max-width: 700px) {
+        .city__article-block{
+            width: auto;
+            margin: 0 15px;
+        }
+        .skills__perc-sport, .skills__perc-study, .skills__perc-music, .skills__perc-comm{
+            font-size: 38px;
+        } 
+        .skills__text-comm, .skills__text-study, .skills__text-music, .skills__text-sport{
+            font-size: 15px;
+        }
+        .about-us__text{
+            margin: 0 15px;
+        }
+        .about-us__music-pic{
+            width: 40px;
+        }
+    }
+
   }
