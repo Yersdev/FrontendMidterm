@@ -110,6 +110,25 @@ body{
     overflow-wrap: break-word;
     margin-bottom: 9px;
 }
+.welcome__text--jumping {
+    display: inline-block;
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    animation: jump 0.8s ease infinite;
+}
+
+@keyframes jump {
+    0%, 100% {
+        transform: translateY(0);
+
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    
+}
+
 .welcome__speciality{
     width: 205px;
     height: 23px;
@@ -191,57 +210,343 @@ body{
     gap: 30px;
 }
 .about-us__name{
+    font-family: DM Sans;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23.44px;
+
     padding-bottom: 3px;
     display: block;
     align-items: center;
     margin: 0 auto;
 
 }
+.about-us__real-name{
+    font-family: DM Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23.44px;
+}
 .about-us__email{
-    
+    font-family: DM Sans;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23.44px;
+
+        
     display: block;
     padding-bottom: 3px;
     text-align: center;
     margin: 0 auto;
+}
+.about-us__real-email{
+    font-family: DM Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23.44px;        
 }
 .about-us__telegramm{
     display: block;
     text-align: center;
     padding-bottom: 3px;
     margin: 0 auto;
+    font-family: DM Sans;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23.44px;
+    
+}
+.about-us__real-telegramm{
+    font-family: DM Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23.44px;
+        
 }
 .about-us__phone{
     display: block;
     text-align: center;
-    margin: 0 auto;
     padding-bottom: 3px;
+    margin: 0 auto;
+    font-family: DM Sans;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23.44px;
 
+}
+.about-us__real-phone{
+    width: 180px;
+    font-family: DM Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23.44px;
 }
 
 .about-us__music-pic{
     padding-bottom: 18px;}
-    
+
+.hobbies{
+    margin-bottom: 141px;
+}
+.hobbies__title{
+    width: 222px;
+    height: 60.03px;
+    font-family: DM Sans;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 62.5px;
+    text-align: center;    
+    margin: 0 auto;
+    margin-bottom: 102px;
+}
+.hobies__boxes{
+    display: flex;
+    gap: 60px;
+}
+.hobbies__travel{
+    width: 349px;
+    height: 241px;
+    background-color: #212121;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+.hobbies__dev{
+    width: 349px;
+    height: 241px;
+    background-color: #212121;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+.hobbies__sport{
+    width: 349px;
+    height: 241px;
+    background-color: #212121;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+.hobbies__img{
+    margin:34px 242px 30px 56px;
+    width: 51px;
+    height: 46.47px;
+}
+.hobbies__text-forest{
+    width: 229px;
+    height: 94px;
+    margin: 0 auto;
+    font-family: DM Sans;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 46.87px;
+    text-align: left;
+    color: #535353;
+}
+.hobbies__text-dev{
+    width: 229px;
+    height: 94px;
+    margin: 0 auto;
+    font-family: DM Sans;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 46.87px;
+    text-align: left;
+    color: #535353;
+}
+.hobbies__text-sport{
+    width: 200px;
+    height: 94px;
+    margin: 0 auto;
+    font-family: DM Sans;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 46.87px;
+    text-align: left;
+    color: #535353;    
+}
+.skills{
+    padding-bottom: 100px;
+}
+.skills__title{
+    margin: 0 auto;
+    width: 202px;
+    height: 62px;
+    top: 1944px;
+    left: 617px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: DM Sans;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 62.5px;
+    text-align: center;
+    margin-bottom: 73px;        
+}
+.skills__boxes{
+    display: flex;
+    width: 1168px;
+    height: 235px;
+    margin: 0 auto;
+    border: #333333 solid 1px;
+    background-color: #212121;  
+    border-radius: 15px;
+}
+.skills__sport{
+    width: auto;
+    height: 119px;
+    margin: auto auto;    
+}
+.skills__perc-sport{
+    width: 159px;
+    height: 94px;
+    font-family: DM Sans;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 93.74px;
+    text-align: center;
+    color: #4F4F4F;
+    margin: 0 auto;    
+}
+.skills__text-sport{
+    width: auto;
+    height: 31px;
+    font-family: DM Sans;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31.25px;
+    text-align: center;
+    color: #3fb759; 
+    margin: 0 auto;       
+}
 
 
 
+.skills__comm{
+    width: auto;
+    height: 119px;
+    margin: auto auto;    
+}
+.skills__perc-comm{
+    width: 159px;
+    height: 94px;
+    font-family: DM Sans;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 93.74px;
+    text-align: center;
+    color: #4F4F4F;
+    margin: 0 auto;    
+}
+.skills__text-comm{
+    width: auto;
+    height: 31px;
+    font-family: DM Sans;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31.25px;
+    text-align: center;
+    color: #3fb759; 
+    margin: 0 auto;       
+}
 
 
+.skills__study{
+    width: auto;
+    height: 119px;
+    margin: auto auto;    
+}
+.skills__perc-study{
+    width: 159px;
+    height: 94px;
+    font-family: DM Sans;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 93.74px;
+    text-align: center;
+    color: #4F4F4F;
+    margin: 0 auto;    
+}
+.skills__text-study{
+    width: auto;
+    height: 31px;
+    font-family: DM Sans;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31.25px;
+    text-align: center;
+    color: #3fb759; 
+    margin: 0 auto;       
+}
 
+.skills__music{
+    width: auto;
+    height: 119px;
+    margin: auto auto;    
+}
+.skills__perc-music{
+    width: 159px;
+    height: 94px;
+    font-family: DM Sans;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 93.74px;
+    text-align: center;
+    color: #4F4F4F;
+    margin: 0 auto;    
+}
+.skills__text-music{
+    width: auto;
+    height: 31px;
+    font-family: DM Sans;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31.25px;
+    text-align: center;
+    color: #3fb759; 
+    margin: 0 auto;       
+}
+.city{
+    margin-bottom: 100px;
+}
+.city__title{
+    width: auto;
+    height: 62px;
+    font-family: DM Sans;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 62.5px;
+    text-align: center;
+    margin-bottom: 80px;        
+}
+.city__text{
 
+    width: auto;
+    height: auto;
+    margin: auto auto;
+    text-align: left;
+    font-family: DM Sans;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 23.44px;
+    margin-bottom: 38px;
+}
+.city__article-block{    
+    display: flex;
+    width: 1168px;
+    height: 550px;
+    margin: 0 auto;
+    justify-content: space-between;
+    gap: 80px;
+}
+.city__img{
+    width: 400px;
+    height: 400px;
+    margin: auto auto;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.city__text-title{
+    margin: 50px auto;
+    width: 300px;
+    font-size: 33px;
+}
 .full-stars {
     text-align: center;
 }
@@ -258,17 +563,29 @@ body{
 }
 .full-stars label svg {
     margin: 2px;
-    height: 40px;
-    width: 40px;
-    fill: #337AB7;
+    height: 100px;
+    width: 100px;
+    fill: #3fb759;
     transition: fill 0.3s;
 }
 .full-stars input:checked ~ label svg {
-    fill: #BFE2FF;
+    fill: #535353;
 }
 .full-stars .rating-group:hover label svg {
-    fill: #337AB7;
+    fill: #3fb759;
 }
 .full-stars .rating-group input:hover ~ label svg {
-    fill: #BFE2FF;
+    fill: #535353;
+}
+
+.rate{
+    margin: 0 auto;
+    width: 1440px;
+    margin-bottom: 150px;
+}
+.rate__title{
+    margin: 50px auto;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
 }
