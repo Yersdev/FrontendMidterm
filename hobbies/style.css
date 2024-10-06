@@ -42,10 +42,11 @@ html{
 }
 body::-webkit-scrollbar {
     display: none;
+    border: #3fb759 solid 2px;
   }
 body{
     max-width: 1440px;
-    max-height: 3200px;
+    max-height: auto;
     margin: 0 auto;
 }
 .main-page__header{
@@ -71,6 +72,7 @@ body{
     text-align: left;
 }
 .nav{
+    padding-right: 80px;
     gap: 40px;
     width: auto;
     height: 23px;
@@ -90,9 +92,10 @@ body{
     text-align: left;
 }
 .welcome{
+
     display: flex;
-    margin: 0 128px 47px 98px;
-    gap: 86px;
+    margin: 100px 128px 47px 98px;
+    justify-content: space-between;
 }
 .welcome__subtitle{
     margin-top: 200px;
@@ -175,6 +178,21 @@ body{
     justify-content: center;
     transition: background-color 0.3s ease;
     border: white solid 2px;
+}
+
+.welcome__author-pic{
+    margin-left: 80px;
+    margin-top: 80px;
+    width: 500px;
+    height: 550px;
+    border-radius: 50%;
+            overflow: hidden;
+            object-fit: cover; /* Сохранение пропорций изображения */
+            display: block;
+    gap: 0px;
+    border: 20px solid #212121; 
+    opacity: 0px;
+    
 }
 .about-us{
 
@@ -301,28 +319,30 @@ body{
 }
 .hobies__boxes{
     display: flex;
-    gap: 60px;
+    width: 1168px;
+    height: 235px;
+    margin: 0 auto;
 }
 .hobbies__travel{
+    margin-left: 40px;
     width: 349px;
     height: 241px;
     background-color: #212121;
     border-radius: 15px;
-    margin: 0 auto;
 }
 .hobbies__dev{
     width: 349px;
+    margin-left: 40px;
     height: 241px;
     background-color: #212121;
     border-radius: 15px;
-    margin: 0 auto;
 }
 .hobbies__sport{
+    margin-left: 40px;
     width: 349px;
     height: 241px;
     background-color: #212121;
     border-radius: 15px;
-    margin: 0 auto;
 }
 .hobbies__img{
     margin:34px 242px 30px 56px;
@@ -530,13 +550,14 @@ body{
 }
 .city__article-block{    
     display: flex;
-    width: 1168px;
-    height: 550px;
+    width: auto;
+    height: auto;
     margin: 0 auto;
     justify-content: space-between;
     gap: 80px;
 }
 .city__img{
+    padding-left: 20px;
     width: 400px;
     height: 400px;
     margin: auto auto;
@@ -547,6 +568,9 @@ body{
     width: 300px;
     font-size: 33px;
 }
+.rate{
+
+}
 .full-stars {
     text-align: center;
 }
@@ -554,15 +578,13 @@ body{
     display: inline-flex;
 }
 .full-stars input {
-    position: absolute;
-    left: -9999px;
 }
 .full-stars label {
     margin: 0;
     cursor: pointer;
 }
 .full-stars label svg {
-    margin: 2px;
+    margin: 3px;
     height: 100px;
     width: 100px;
     fill: #3fb759;
@@ -580,7 +602,7 @@ body{
 
 .rate{
     margin: 0 auto;
-    width: 1440px;
+    width: auto;
     margin-bottom: 150px;
 }
 .rate__title{
@@ -589,3 +611,48 @@ body{
     font-size: 48px;
     font-weight: 700;
 }
+
+
+@media only screen and (max-width: 1200px) {
+    .welcome__pic-author{
+        display: none;
+    }
+    .welcome__subtitle{
+        margin: auto;
+    }
+    .hobbies__sport{
+        width: 249px;
+        height: auto;
+    }
+    .hobbies__text-sport{
+        width: 120px;
+        height: 94px;
+    }
+    .hobbies__dev{
+        width: 249px;
+        height: auto;
+    }
+    .hobbies__text-dev{
+        width: 210px;
+        height: 94px;
+    }.hobbies__travel{
+        width: 249px;
+        height: auto;
+    }
+    .hobbies__text-forest{
+        width: 210px;
+        height: 94px;
+    }
+    .hobies__boxes{
+        width: 868px;
+    }
+    .skills__boxes{
+        width: 868px;
+    }
+    .about-us__descs{
+        gap: 15px;
+    }
+    .city__article-block{
+        width: 900px;
+    }
+  }
