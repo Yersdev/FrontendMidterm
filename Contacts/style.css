@@ -31,14 +31,16 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+*{  font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;}
 html{
-    background-color: black;
+    background-color: #141414;
     color: white; 
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
+
 }
+
 
 body{
     max-width: 1440px;
@@ -50,6 +52,7 @@ body{
     margin-bottom: 124px;
 }
 .hobby-page__header{
+    margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -89,4 +92,34 @@ body{
     line-height: 23.44px;
     text-align: left;
 }
+
+.contact-us{
+    height: 400px;
+    width: 1069px;
+    margin: 150px auto;
+    gap: 88px;
+    display: flex;
+}
+.contact-us__text-block{
+    width: 431px;
+    height: 335px;
+
+}
+.contact-us__text-title{
+    width: 354px;
+    height: 58px;
+    font-weight: 600;
+    font-size: 48px;
+    margin-bottom: 58px;
+}
+.contact-us__text-block-els{
+    width: 421px;
+    height: 121px;
+    display: flex;
+    margin: 0 auto;
+
+}
+.contact-us__location{
+    }
+
 
