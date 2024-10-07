@@ -47,10 +47,10 @@ body{
     margin: 0 auto;
 
 }
-.main-page__header{
+.contact-page__header{
     margin-bottom: 124px;
 }
-.hobby-page__header{
+.contact-page__header{
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
@@ -279,6 +279,9 @@ body{
         height: auto;
         margin-top: 60px;
     }
+    .contact-us{
+        margin: 150px 20px;
+    }
     }
     @media only screen and (max-width: 800px) {
         .nav{
@@ -291,6 +294,7 @@ body{
         @media only screen and (max-width: 700px) {
         .contact-us{
             flex-direction: column;
+            display: none;
         }
         
         }

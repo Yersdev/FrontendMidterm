@@ -52,7 +52,7 @@ body{
 .main-page__header{
     margin-bottom: 124px;
 }
-.hobby-page__header{
+.home-page__header{
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -257,6 +257,9 @@ body{
     padding-bottom: 3px;
     text-align: center;
     margin: 0 auto;
+}
+.home-page__burger-menu{
+    display: none;
 }
 .about-us__real-email{
     font-family: DM Sans;
@@ -721,43 +724,42 @@ body{
         }
         .hobbies__text-dev::after {
             content: "Backend Dev";
-            visibility: visible; /* Отображаем текст псевдоэлемента */
-    /* Стилизуем псевдоэлемент, чтобы он соответствовал исходному элементу */
-    padding: inherit;    /* Наследуем padding */
-    margin: inherit;     /* Наследуем margin */
-    font-size: inherit;  /* Наследуем размер шрифта */
-    
-    color: inherit;      /* Наследуем цвет текста */
-    font-family: inherit; /* Наследуем шрифт */
-    line-height: inherit;
-        }}
-    @media only screen and (max-width: 800px) {
-    .about-us__text{
-        width: 680px;
-        height: auto;
-    }
-    .about-us__descs{
-        gap: 10px;
-        padding-bottom: 80px;
-    }
-    .about-us__name, .about-us__email, .about-us__telegramm, .about-us__phone{
-        width: auto;
-    }
-    .about-us__real-name, .about-us__real-email, .about-us__real-telegramm, .about-us__real-phone{
-        width: auto;
-        font-size: 10px;
-    }
-    .header__icon{
-        display: none;}
-    }
-    .nav{
-        margin: 40px auto;
-    }
-    @media only screen and (max-width: 700px) {
-        .about-us__text{
-            width: auto;
-            font-size: 12px;
-        }
+            visibility: visible;
+            padding: inherit;
+            margin: inherit;
+            font-size: inherit;
+            
+            color: inherit; 
+            font-family: inherit;
+            line-height: inherit;
+                }}
+            @media only screen and (max-width: 800px) {
+            .about-us__text{
+                width: 680px;
+                height: auto;
+            }
+            .about-us__descs{
+                gap: 10px;
+                padding-bottom: 80px;
+            }
+            .about-us__name, .about-us__email, .about-us__telegramm, .about-us__phone{
+                width: auto;
+            }
+            .about-us__real-name, .about-us__real-email, .about-us__real-telegramm, .about-us__real-phone{
+                width: auto;
+                font-size: 10px;
+            }
+            .header__icon{
+                display: none;}
+            }
+            .nav{
+                margin: 40px auto;
+            }
+            @media only screen and (max-width: 700px) {
+                .about-us__text{
+                    width: auto;
+                    font-size: 12px;
+                }
 
         .hobbies__text-dev, .hobbies__text-sport, .hobbies__text-forest{
             width: 120px;
@@ -845,6 +847,13 @@ body{
         
     }
     @media only screen and (max-width: 400px) {
+        .home-page__header{
+            display: none;
+        }
+        .home-page__burger-menu{
+            margin: 20px;
+            display: block;
+        }
         .welcome__Telegramm{
             width: 101px;
             height: 40px;
