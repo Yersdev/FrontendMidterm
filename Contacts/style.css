@@ -47,6 +47,9 @@ body{
     margin: 0 auto;
 
 }
+.home-page__burger-menu{
+    display: none;
+}
 .contact-page__header{
     margin-bottom: 124px;
 }
@@ -292,10 +295,31 @@ body{
         }
         }
         @media only screen and (max-width: 700px) {
+            
+        .home-page__burger-menu{
+            display: flex;
+            margin: 50px 50px;
+        }
         .contact-us{
             flex-direction: column;
+        }
+        .contact-us__text-block{
+            width: auto;
+        }
+        .contact-page__header{
             display: none;
         }
-        
+        @media only screen and (max-width: 500px) {
+          .contact-us__map-img{
+            width: 250px;
+            margin-left:5vw;
+            
+            height: auto;
+          }
+          .contact-us__img{
+            width: auto;
+          }  
+          .header__icon{display: flex;}
+        }
         }
 }
