@@ -36,6 +36,7 @@ footer, header, hgroup, menu, nav, section {
 html{
     background: linear-gradient(#28134a, #0f080f);
     color: white; 
+
 }
 body::-webkit-scrollbar {
     display: none;
@@ -119,8 +120,8 @@ body{
     content: '';
     right: 0;
     top: 0;
-    border-top: 1px solid #ffb43b;
-    border-right: 1px solid #c0882d;
+    border-top: 1px solid #9a17ae;
+    border-right: 1px solid #9a17ae;
     transform: translate(-100%, 50%);
   }
   
@@ -128,8 +129,8 @@ body{
     content: '';
     left: 0;
     bottom: 0;
-    border-bottom: 1px solid #ffb43b;
-    border-left: 1px solid #c0882d;
+    border-bottom: 1px solid #b506ad92;
+    border-left: 1px solid #b506ad92;
     transform: translate(100%, -50%)
   }
   
@@ -157,9 +158,10 @@ body{
 
 }
 .education-places__text-univer{
-    width: 600px;
+    width: auto;
     row-gap: 10px;
     margin: auto;
+    height: auto;
 }
 .education-places__greeting{
     width: auto;
@@ -208,19 +210,20 @@ body{
 
 
 .school{
-    width: 1200px;
+    width: auto;
     height: auto;
     margin: 150px auto;
     padding: 0 50px;
     gap: 88px;
 }
 .school__ktl-block{
-    width: auto;
+    width: 1200px;
     height: auto;
     display: flex;
+    justify-content: space-between;
 }
 .school__text-block{
-    width: 600px;
+    width: auto;
     row-gap: 10px;
     margin: auto;
 }
@@ -248,6 +251,10 @@ body{
     }
     
 }
+.school__ktl-block{
+    display: flex;
+    gap: 15px;
+}
 .school__ktl-text{
     margin: auto;
     width: auto;
@@ -269,6 +276,7 @@ body{
 }
 
 
+
 .achievment{
     margin-bottom: 141px;
 }
@@ -285,12 +293,12 @@ body{
 }
 .achievment__boxes{
     display: flex;
-    width: 1168px;
+    justify-content: space-between;
+    width: 1200px;
     height: 235px;
     margin: 0 auto;
 }
 .achievment__algebra{
-    margin-left: 40px;
     width: 349px;
     height: 241px;
     background-color: #3b0668;
@@ -298,20 +306,18 @@ body{
 }
 .achievment__russia{
     width: 349px;
-    margin-left: 40px;
     height: 241px;
     background-color: #3b0668;
     border-radius: 15px;
 }
 .achievment__physics{
-    margin-left: 40px;
     width: 349px;
     height: 241px;
     background-color: #3b0668;
     border-radius: 15px;
 }
 .achievment__img{
-    margin:34px 0 30px 56px;
+    margin:34px 56px 30px 56px;
     width: 51px;
     height: 46.47px;
 }
@@ -349,3 +355,101 @@ body{
     color: hwb(278 31% 0%);    
 }
 
+.educatioin-way{
+    width: 1200px;
+    height: auto;
+    margin: 150px auto;
+}
+
+.educatioin-way__block{
+    color: #be4fff;
+    background-color: #3b0668;
+    border-radius: 20px;
+    height: 300px;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.educatioin-way__title{
+    text-align: center;
+    padding-bottom: 50px;
+
+    font-size: 48px;
+    color: #ffffff;
+}
+.educatioin-way__education-school, .educatioin-way__second-education, .educatioin-way__third-education{
+    color: #d07fff;
+
+}
+@media only screen and (max-width: 1200px) {
+    .education-places, .school__ktl-block{
+        gap:30px;
+        width: auto;
+    }
+    .educatioin-way, .achievment__boxes{
+        width: auto;
+    }
+    .education-page__sdu-img, .school__ktl-img{
+        padding: 15px;
+    }
+}
+@media only screen and (max-width: 1050px) {
+    .school__ktl-block, .education-places__univer-block{
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        justify-content: space-between;
+    }
+    .education-places__text-univer,.school__text-block{
+        text-align: center;
+    }
+    .achievment__boxes{
+    background-color: #3b0668;
+    border-radius: 15px;
+    }
+    .achievment__algebra, .achievment__russia, .achievment__physics{
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+    }
+    .achievment__text-algebra, .achievment__text-russia, .achievment__text-physics{
+        width: auto;
+        height: auto;
+        text-align: center;
+    }
+@media only screen and (max-width: 1050px) {
+    .achievment__boxes{
+        flex-direction: column;
+        height: auto;
+    }
+
+}
+@media only screen and (max-width: 650px) {
+    .educatioin-way__block{border-radius: 0;}
+    .education-page__header{display: none;}
+    .education-page__burger-menu{
+        display: block;
+        margin: 50px;
+    }
+    .education-places__sdu-text, .school__ktl-text{
+        font-size: 12px;
+        height: auto;
+        line-height: 12px;
+        width: auto;
+        text-wrap: wrap;
+    }
+    .achievment__boxes{
+        border-radius: 0;
+    }
+    .school__ktl-img, .education-page__sdu-img{
+        
+    display: none;}
+    .educatioin-way__title{
+        font-size: 30px;
+    }
+
+}
+}
