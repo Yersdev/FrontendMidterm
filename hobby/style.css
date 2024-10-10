@@ -35,6 +35,7 @@ footer, header, hgroup, menu, nav, section {
 html{
     background-color: rgb(28, 24, 73);
     color: white; 
+    height: auto;
 }
 body::-webkit-scrollbar {
     display: none;
@@ -99,7 +100,7 @@ body::-webkit-scrollbar {
     display: none;
 }
 .video-games{
-    width: 1200px;
+    width: auto;
     margin: 10px auto;
     display: flex;
     flex-direction: column;
@@ -165,6 +166,7 @@ body::-webkit-scrollbar {
 .hobby-card{
     margin: 20px auto;
     width: auto;
+    height: 400px;
 }
 .hobby-card__title{
     width: 222px;
@@ -227,7 +229,7 @@ body::-webkit-scrollbar {
       );
       transition: 10ms;
     }
-    .hobby-card__walking, .hobby-card__box, .hobby-card__gym:hover{
+    .hobby-card__walking:hover, .hobby-card__box:hover, .hobby-card__gym:hover{
     scale: 1.02;
 }
 
@@ -285,3 +287,105 @@ body::-webkit-scrollbar {
       transform: rotate(-15deg);
     }
   }
+
+
+@media only screen and (max-width: 1200px) {
+    .video-games__minecraft-block{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .video-games__minecraft-text-block{
+        margin-bottom: 50px;
+    }
+    .video-games__valorant{
+        padding-right: 20px;
+    }
+    .video-games__valorant-text, .video-games__minecraft-text{
+        padding-left: 20px;
+    }
+    .video-games__valorant-subtitle, .video-games__minecraft-subtitle{
+        padding-left: 10px;
+    }
+    .hobby-card__boxes{
+        display: flex;
+        justify-content: space-between;
+        height: 235px;
+        width: auto;
+        margin: 0 auto;
+    }
+@media only screen and (max-width: 1050px) {
+    .hobby-card__walking,.hobby-card__box,.hobby-card__gym{
+        background-color: rgb(28, 24, 73);
+
+    }
+}
+@media only screen and (max-width: 750px) {
+    .hobby-card__text-gym,.hobby-card__text-walking,.hobby-card__text-box{
+        width: 190px;
+        height: auto;
+        margin: 0 auto;
+        font-weight: 500;
+        text-align: center;
+        padding: 5px;
+        font-size: 14px;
+
+    }
+    
+}
+@media only screen and (max-width: 600px) {
+    .video-games__valorant-block{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .hobby-page__header{
+        display: none;
+    }
+    .hobby-page__burger-menu{
+        display: block;
+        margin: 15px 50px 0 5px;
+    }
+    .hobby-card__boxes{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+    }   
+    .hobby-card{
+        height: 950px;
+        
+    }
+    .hobby-card__text-gym,.hobby-card__text-walking,.hobby-card__text-box{
+        width: 190px;
+        height: auto;
+        margin: 0 auto;
+        font-weight: 500;
+        text-align: center;
+        padding: 5px;
+        font-size: 18px;
+
+    }
+    .hobby-card__walking, .hobby-card__box, .hobby-card__gym{
+        width: 300px;
+        margin: 0 auto;
+        }
+        .video-games__minecraft-gif img{
+            width: 300px;
+        }
+}
+@media only screen and (max-width: 400px) 
+{
+    ul{list-style: none;}
+    a{
+        font-size: 14px;
+    }
+    .video-games__valorant img{
+        width: 300px;
+        height: auto;
+        margin-left: 10px;
+    }
+}
+}
