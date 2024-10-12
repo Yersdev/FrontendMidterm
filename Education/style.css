@@ -129,8 +129,8 @@ body{
     content: '';
     left: 0;
     bottom: 0;
-    border-bottom: 1px solid #b506ad92;
-    border-left: 1px solid #b506ad92;
+    border-bottom: 2px solid #b506ad92;
+    border-left: 2px solid #b506ad92;
     transform: translate(100%, -50%)
   }
   
@@ -141,7 +141,7 @@ body{
   }
   
   .nav a:hover {
-    color: #d07fff;
+    color: #ffff;
   }
 
 .education-places{
@@ -195,6 +195,8 @@ body{
     width: auto;
     height: auto;
     font-size: 16px;
+    padding-right: 10px;
+
     line-height: 23px;
 }
 .education-page__sdu-pic-block{
@@ -206,6 +208,7 @@ body{
     width: 400px;
     height: auto;
     margin: auto;
+    padding-left: 5px;
 }
 
 
@@ -303,8 +306,11 @@ body{
     height: 241px;
     background-color: #3b0668;
     border-radius: 15px;
+    transition: 0.5s;
 }
+
 .achievment__russia{
+    transition: 0.5s;
     width: 349px;
     height: 241px;
     background-color: #3b0668;
@@ -312,10 +318,15 @@ body{
 }
 .achievment__physics{
     width: 349px;
+    transition: 0.5s;
     height: 241px;
     background-color: #3b0668;
     border-radius: 15px;
 }
+.achievment__algebra:hover, .achievment__russia:hover, .achievment__physics:hover{
+    scale: 1.08;
+}
+
 .achievment__img{
     margin:34px 56px 30px 56px;
     width: 51px;
